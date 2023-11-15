@@ -1,0 +1,76 @@
+@import './variables';
+
+.wrap {
+  text-align: left;
+  position: relative;
+}
+
+.label {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0;
+  color: $color-grey;
+  position: absolute;
+  left: 18px;
+  top: 9px;
+  text-transform: uppercase;
+  @include fira-sans;
+}
+
+.input {
+  display: block;
+  padding: 16px 16px 0;
+  width: 100%;
+  height: 46px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+  border-radius: 0;
+  border: 1px solid rgba($color-earth-grey, .2);
+  color: $color-black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-height: 1.2em;
+  background-color: transparent;
+  
+  @include max-screen($breakpoint-mobile) {
+    border-color: rgba($color-earth-grey, .2);
+  }
+  
+  &::placeholder {
+    color: $color-grey;
+    text-transform: uppercase;
+  }
+
+  &[value=""] {
+    color: $color-grey;
+    text-transform: uppercase;
+    color: $color-grey;
+  }
+}
+
+.picker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.datePickerInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 13px;
+  color: $color-red;
+  text-align: left;
+}

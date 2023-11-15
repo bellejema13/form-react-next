@@ -1,0 +1,100 @@
+@import './variables';
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.group {
+  margin: 7px 0;
+  width: 100%;
+  position: relative;
+}
+
+.groupHalf {
+  display: inline-block;
+
+  @include min-screen($breakpoint-ipad-min) {
+    width: calc(50% - 7px);
+  }
+}
+
+.groupHalfLast {
+  @include min-screen($breakpoint-ipad-min) {
+    margin-left: auto;
+  }
+}
+
+.groupMarketing {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $color-grey;
+  
+  a {
+    color: $color-grey;
+    text-decoration: underline;
+  }
+}
+
+.button {
+  display: block;
+  width: 100%;
+  height: 56px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: $color-white;
+  text-align: center;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  background-color: $color-cta-primary;
+  @include fira-sans-500;
+}
+
+.infoCheckbox {
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $color-black;
+
+  @include min-screen($breakpoint-ipad-min) {
+    font-size: 12px;
+  }
+}
+
+.error {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 13px;
+  color: $color-red;
+  text-align: left;
+}
+
+.loading {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  fill: #fff;
+  animation: spinner 2s infinite ease;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}

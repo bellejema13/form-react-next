@@ -1,0 +1,55 @@
+@import './variables';
+
+.list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 45px;
+  list-style: none;
+
+  @include max-screen($breakpoint-mobile) {
+    margin-top: 18px;
+    display: block;
+  }
+}
+
+.item {
+  padding: 0;
+  width: calc(100% / 3);
+  
+  @include max-screen($breakpoint-mobile) {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 18px;
+    padding: 0;
+    max-width: 100%;
+    width: 235px;
+    text-align: left;
+  }
+
+  p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0;
+    @include sang-bleu;
+    
+    @include min-screen($breakpoint-ipad-min) {
+      margin-top: 12px;
+    }
+  }
+}
+
+.icon {
+  margin: 0 auto;
+  width: 97px;
+  height: 97px;
+
+  @include max-screen($breakpoint-mobile) {
+    margin-right: 15px;
+    margin-bottom: 0;
+    flex: none;
+    width: 50px;
+    height: 50px;
+  }
+}

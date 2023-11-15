@@ -1,0 +1,114 @@
+@import './variables';
+
+.content {
+  text-align: center;
+}
+
+.heading {
+  font-size: 24px;
+  line-height: 16px;
+  letter-spacing: 0;
+  @include sang-bleu-300;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.subheading {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0;
+  @include sang-bleu-300;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 15px;
+    line-height: 31px;
+  }
+}
+
+.description {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;  
+  text-align: left;
+  @include sang-bleu-300;
+  
+  @include max-screen($breakpoint-mobile) {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  p,
+  li {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 19.5px;
+    @include sang-bleu-300;
+  }
+
+  ul,
+  ol {
+    margin-left: 18px;
+  }
+  
+  h2, 
+  h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    @include sang-bleu-300;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h4, 
+  h5 {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+    @include sang-bleu-300;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+
+    > caption {
+      display: none;
+    }
+  }
+
+  thead {
+    margin-top: 10px;
+  }
+
+  td,
+  th {
+    margin-top: 24px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 19.5px;
+    border: 1px solid $color-grey;
+    @include sang-bleu-300;
+  }
+
+  th {
+    background-color: rgba($color-grey, .3);
+  }
+}
+
+.tableOverflow {
+  overflow-x: auto;
+}

@@ -1,0 +1,131 @@
+@import './variables';
+
+.main {
+  color: $color-earth-grey;
+  text-align: center;
+}
+
+.contentWrap {
+  padding: 20px 30px;
+
+  @include min-screen($breakpoint-ipad-min) {
+    position: relative;
+    padding-bottom: 54px;
+  }
+
+  @include min-screen($breakpoint-desktop) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.contentRight {
+  @include min-screen($breakpoint-desktop) {
+    min-height: 100vh;
+    flex: none; 
+    max-width: 590px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.backgroundWrap {
+  width: 100%;
+  
+  @include min-screen($breakpoint-desktop) {
+    min-height: 100vh;
+    position: relative;
+  }
+}
+
+.background {
+  display: none;
+
+  @include min-screen($breakpoint-ipad-min) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+}
+
+.content {
+  margin: -33px auto 0;
+  padding: 23px 0;
+  max-width: 590px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+
+  @include min-screen($breakpoint-ipad-min) {
+    margin-top: 30px;
+    padding: 50px;
+    background-color: $color-white;
+    z-index: 1;
+  }
+
+  @include min-screen($breakpoint-desktop) {
+    margin-top: 0;
+    padding: 0 75px;
+  }
+}
+
+.heading {
+  font-size: 36px;
+  line-height: 47px;
+  letter-spacing: 0;
+  @include sang-bleu;
+  
+  @include max-screen($breakpoint-mobile) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.headingFR {
+  @include max-screen($breakpoint-ipad) {
+    padding: 0 20px;
+  }
+}
+
+.description {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;  
+  @include sang-bleu;
+
+  @include max-screen($breakpoint-mobile) {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.descriptionFR {
+  @include max-screen($breakpoint-ipad) {
+    margin: 12px -16px 0;
+  }
+}
+
+.button {
+  margin: 50px auto 0;
+  max-width: 256px;
+  width: 100%;
+  text-transform: uppercase;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}

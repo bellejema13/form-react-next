@@ -1,0 +1,72 @@
+{
+  "Page": {
+    "heading": {
+      "text": "Rejoignez",
+      "subtext": "LOUIS XIII Society"
+    }
+  },
+  "Form": {
+    "salutation": {
+      "text": "CIVILITé",
+      "options": {
+        "option1": "M.",
+        "option2": "M. et Mme",
+        "option3": "Madame",
+        "option4": "Mme",
+        "option5": "Mademoiselle",
+        "option6": "Dr",
+        "option7": "Je préfère ne pas dire"
+      }
+    },
+    "firstName": "Prénom",
+    "lastName": "nom",
+    "country": "PAYS",
+    "state": "État",
+    "city": "VILLE",
+    "postcode": "CODE POSTAL",
+    "birthDate": "Date de naissance",
+    "email": "adresse email",
+    "phone": "Téléphone portable",
+    "password": {
+      "text": "mot de passe",
+      "info": "Le mot de passe doit contenir au moins 11 caractères, 1 majuscule, 1 minuscule et 1 chiffre numérique"
+    },
+    "confirmPassword": "confirmer le mot de passe",
+    "acceptEmailMarketing": "J’accepte de recevoir des communications par mail concernant les offres, services et évènements de Louis XIII. Vous pouvez à tout moment utiliser le lien de désabonnement intégré dans nos mails de communication.",
+    "registerButton": "S’inscrire",
+    "acceptPrivacyPolicy": {
+      "text1": "Pour plus d’informations, veuillez consulter notre ",
+      "text2": "politique de confidentialité",
+      "text3": ", je confirme avoir pris connaissance de la politique de confidentialité."
+    },
+    "error": {
+      "emptyField": "Ce champ est obligatoire",
+      "birthDate": "Vous devez être un adulte",
+      "passwordInvalid": "Le mot de passe doit contenir au moins 11 caractères, 1 majuscule, 1 minuscule et 1 chiffre numérique",
+      "emailInvalid": "Veuillez fournir une adresse email valide",
+      "emailTaken": "Cette adresse email est déjà prise", 
+      "passwordNotMatched": "Le mot de passe ne correspond pas.",
+      "phoneInvalid": "Veuillez fournir un numéro de téléphone valide",
+      "phoneTaken": "Ce numéro de téléphone est déjà pris"
+    }
+  },
+  "Society": {
+    "heading": "Rejoignez LOUIS XIII Society",
+    "description": "La création d’un compte LOUIS XIII vous permettra de :",
+    "or": "ou",
+    "clickHere": "Cliquez ici",
+    "wechat": {
+      "description": "Pour créer un compte LOUIS XIII Society, merci de vous inscrire directement sur WeChat :"
+    }
+  },
+  "Confirmation": {
+    "heading": "Merci pour votre inscription !",
+    "description": "Cher(e){first_name}{last_name}, la création d’un compte LOUIS XIII vous permettra de :",
+    "returnButton": "RETOURNER AU FORMULAIRE"
+  },
+  "TextWithIcons": {
+    "text1": "Enregistrer votre carafe",
+    "text2": "Completer votre collection de carafes LOUIS XIII",
+    "text3": "Bénéficier d'un accès unique à des expériences exclusives"
+  }
+}

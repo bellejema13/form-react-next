@@ -1,0 +1,65 @@
+$font-fira: '__Fira_Sans_e226df';
+$font-sangblue: 'SangBleu Kingdom';
+
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #868686;
+$color-grey-200: #ECECEC;
+$color-grey-300: #D7D6D6;
+$color-cta-primary: #BE9A5A;
+$color-earth-grey: #313130;
+$color-red: #9E0B28;
+
+// BREAKPOINTS
+$breakpoint-mobile-min: 375px;
+$breakpoint-mobile: 589px;
+$breakpoint-ipad-min: 590px;
+$breakpoint-ipad: 889px;
+$breakpoint-desktop: 890px;
+
+// PATHS
+$font-path: "/assets/fonts/";
+$image-path: "/assets/images/";
+
+// TRANSITION
+$duration: .35s;
+$ease: ease;
+
+@import "sass-mediaqueries/media-queries";
+@import "./mixins";
+
+@font-face {
+  font-family: $font-sangblue;
+  src: url('#{$font-path}SangBleuKingdom-Bold.eot');
+  src: url('#{$font-path}SangBleuKingdom-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}SangBleuKingdom-Bold.woff2') format('woff2'),
+      url('#{$font-path}SangBleuKingdom-Bold.woff') format('woff'),
+      url('#{$font-path}SangBleuKingdom-Bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-sangblue;
+  src: url('#{$font-path}SangBleuKingdom-Regular.eot');
+  src: url('#{$font-path}SangBleuKingdom-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}SangBleuKingdom-Regular.woff2') format('woff2'),
+      url('#{$font-path}SangBleuKingdom-Regular.woff') format('woff'),
+      url('#{$font-path}SangBleuKingdom-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-sangblue;
+  src: url('#{$font-path}SangBleuKingdom-Light.eot');
+  src: url('#{$font-path}SangBleuKingdom-Light.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}SangBleuKingdom-Light.woff2') format('woff2'),
+      url('#{$font-path}SangBleuKingdom-Light.woff') format('woff'),
+      url('#{$font-path}SangBleuKingdom-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

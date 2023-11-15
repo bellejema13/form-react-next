@@ -1,0 +1,46 @@
+@import './variables';
+
+.logo {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.logoDesktop {
+  display: none;
+
+  @include min-screen($breakpoint-ipad-min) {
+    display: block;
+  }
+}
+
+.logoMobile {
+  display: block;
+
+  @include min-screen($breakpoint-ipad-min) {
+    display: none;
+  }
+}
+
+.logoSubtext {
+  display: block;
+  margin-top: 7px;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0;
+  color: $color-black;
+  @include sang-bleu;
+
+  @include min-screen($breakpoint-ipad-min) {
+    color: $color-white;
+  }
+}

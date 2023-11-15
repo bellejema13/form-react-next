@@ -1,0 +1,72 @@
+{
+  "Page": {
+    "heading": {
+      "text": "Join",
+      "subtext": "LOUIS XIII Society"
+    }
+  },
+  "Form": {
+    "salutation": {
+      "text": "TITLE",
+      "options": {
+        "option1": "Mr.",
+        "option2": "Mr. & Mrs.",
+        "option3": "Ms.",
+        "option4": "Mrs.",
+        "option5": "Miss.",
+        "option6": "Dr.",
+        "option7": "I'd rather not say"
+      }
+    },
+    "firstName": "FIRST NAME",
+    "lastName": "LAST NAME",
+    "country": "COUNTRY",
+    "state": "STATE",
+    "city": "CITY",
+    "postcode": "POSTCODE",
+    "birthDate": "DATE OF BIRTH",
+    "email": "EMAIL ADDRESS",
+    "phone": "MOBILE PHONE NUMBER",
+    "password": {
+      "text": "PASSWORD",
+      "info": "Password must contain at least 8 characters, 1 uppercase, 1 numeric digit and 1 special character"
+    },
+    "confirmPassword": "CONFIRM PASSWORD",
+    "acceptEmailMarketing": "I agree to receive information by email about offers, services, products and events from LOUIS XIII. You can unsubscribe from email marketing communications via the “Unsubscribe” link at the bottom of each of our email communications.",
+    "registerButton": "REGISTER",
+    "acceptPrivacyPolicy": {
+      "text1": "We process personal data in accordance with our ",
+      "text2": "Privacy Policy",
+      "text3": ". By clicking on “Register”, I confirm I have read the Privacy Policy."
+    },
+    "error": {
+      "emptyField": "This field is required",
+      "birthDate": "You must be an adult",
+      "passwordInvalid": "Password must contain at least 8 characters, 1 upper case, 1 numeric digit and 1 special character",
+      "emailInvalid": "Email is invalid",
+      "emailTaken": "Email has already been taken",
+      "passwordNotMatched": "Password confirmation must match the provided password",
+      "phoneInvalid": "Enter a valid phone number",
+      "phoneTaken": "Phone has already been taken"
+    }
+  },
+  "Society": {
+    "heading": "Join LOUIS XIII Society",
+    "description": "The Creation of a LOUIS XIII account will allow you to :",
+    "or": "or",
+    "clickHere": "Click here",
+    "wechat": {
+      "description": "To create your LOUIS XIII Society account, please register directly on WeChat"
+    }
+  },
+  "Confirmation": {
+    "heading": "Thank you for your registration !",
+    "description": "Dear{first_name}{last_name}, the creation of a LOUIS XIII account will allow you to :",
+    "returnButton": "RETURN TO FORM"
+  },
+  "TextWithIcons": {
+    "text1": "Contact your privileged contact",
+    "text2": "Complete your LOUIS XIII decanter Collection",
+    "text3": "Benefit from unique and exclusive experiences"
+  }
+}

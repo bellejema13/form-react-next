@@ -1,0 +1,24 @@
+@mixin fira-sans {
+  font-family: $font-fira;
+  font-weight: 400;
+}
+
+@mixin fira-sans-500 {
+  font-family: $font-fira;
+  font-weight: 500;
+}
+
+@mixin sang-bleu {
+  font-family: $font-sangblue;
+  font-weight: 400;
+}
+
+@mixin sang-bleu-500 {
+  font-family: $font-sangblue;
+  font-weight: 500;
+}
+
+@mixin sang-bleu-300 {
+  font-family: $font-sangblue;
+  font-weight: 300;
+}

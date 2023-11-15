@@ -1,0 +1,196 @@
+@import './variables';
+
+.main {
+  color: $color-earth-grey;
+  text-align: center;
+}
+
+.contentWrap {
+  padding: 20px 30px;
+
+  @include min-screen($breakpoint-ipad-min) {
+    position: relative;
+    padding-bottom: 54px;
+  }
+
+  @include min-screen($breakpoint-desktop) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.contentRight {
+  @include min-screen($breakpoint-desktop) {
+    flex: none; 
+    max-width: 640px;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.heading {
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0;
+  color: $color-earth-grey;
+  @include sang-bleu-300;
+
+  @include min-screen($breakpoint-ipad-min) {
+    margin-bottom: 8px;
+    font-size: 32px;
+    text-align: left;
+  }
+
+  @include max-screen(605px) {
+    font-size: 25px;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    text-align: left;
+  }
+
+  @include max-screen(400px) {
+    font-size: 17px;
+  }
+  
+  a {
+    display: inline-block;
+    color: $color-black;
+    position: relative;
+    text-decoration: none;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 5px;
+      left: 0;
+      bottom: 0;
+      background-color: $color-earth-grey;  
+
+      @include min-screen($breakpoint-ipad-min) {
+        bottom: -2px;
+      }
+
+      @include max-screen($breakpoint-mobile) {
+        bottom: 1px;
+      }
+
+      @include max-screen(400px) {
+        bottom: 4px;
+      }
+    }
+  }
+}
+
+.headingFR {
+  @include min-screen($breakpoint-ipad-min) {
+    font-size: 27px;
+  } 
+
+  @include max-screen(605px) {
+    font-size: 25px;
+  }
+
+  @include max-screen(400px) {
+    font-size: 17px;
+  }
+}
+
+.backgroundWrap {
+  width: 100%;
+  
+  @include min-screen($breakpoint-desktop) {
+    height: 100vh;
+    position: relative;
+  }
+  @include max-screen($breakpoint-ipad) {
+    position: static;
+  }
+}
+
+.background {
+  display: none;
+
+  @include min-screen($breakpoint-ipad-min) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  @include screen($breakpoint-ipad-min, $breakpoint-ipad) {
+    position: fixed;
+  }
+}
+
+.content {
+  margin: -33px auto 0;
+  padding: 23px 0;
+  max-width: 590px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  
+  @include min-screen($breakpoint-ipad-min) {
+    margin-top: 30px;
+    padding: 50px;
+    background-color: $color-white;
+    z-index: 1;
+  }
+  
+  @include min-screen($breakpoint-desktop) {
+    padding: 40px 83px;
+    max-width: 100%;
+    overflow-y: auto;
+  }
+}
+
+.innerPrivacy {
+  display: block;
+  padding: 20px 31px;
+
+  @include min-screen($breakpoint-ipad-min) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.contentTop {
+  display: flex;
+  align-items: center;
+}
+
+.langSelector {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.selector {
+  margin-left: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: right;
+  color: $color-grey;
+  cursor: pointer;
+  @include fira-sans;
+}
+
+.selectorActive {
+  text-decoration: underline;
+}

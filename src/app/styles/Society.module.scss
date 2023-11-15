@@ -1,0 +1,64 @@
+@import './variables';
+
+.content {
+  text-align: center;
+}
+
+.heading {
+  font-size: 29px;
+  line-height: 47px;
+  letter-spacing: 0;
+  @include sang-bleu-300;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.description {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;  
+  @include sang-bleu;
+  
+  @include max-screen($breakpoint-mobile) {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.image {
+  margin: 12px auto 0;
+  max-width: 100%;
+}
+
+.link {
+  display: none;
+  
+  @include max-screen($breakpoint-mobile) {
+    display: block;
+  }
+
+  span {
+    display: block;
+    margin: 5px 0;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $color-earth-grey;
+    @include sang-bleu;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $color-red;
+    @include sang-bleu;
+  }
+}
